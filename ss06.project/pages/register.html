@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register_Store</title>
+  <link rel="stylesheet" href="/ss06.project/style/register.css">
+</head>
+<div>
+    <img
+      class="icon"
+      src="/ss06.project/asset/doge-meme-icon-free-vector.jpg"
+      alt=""
+    />
+    <h3>DOG OVER SIZE</h3>
+  </div>
+  <div>
+    <h1 style="font-size: xxx-large">Cửa Hàng Thú Cưng</h1>
+    <h3 style="color: white">Uy tin - Chat luong - Dang yeu</h3>
+  </div>
+
+  <div>
+    <a class="in" style="color: black" href="/ss06.project/pages/login.html"
+      >Đăng nhập</a
+    >
+    <a class="in" style="color: black" href="/ss06.project/utils/index.html"
+      >Cửa hàng</a
+    >
+    <a href=""><button>Cua hang</button></a>
+  </div>
+</header>
+<body>
+  <!---->
+  <form onsubmit="dangki(event)">
+    <h2>First name :</h2>
+    <input id="name1" type="text" placeholder="nhap tai khoan" required />
+    <h2>Last name :</h2>
+    <input id="name2" type="text" placeholder="nhap tai khoan" required />
+    <h2>Tai khoan :</h2>
+    <input id="tk" type="text" placeholder="nhap tai khoan" required />
+    <h2>Mat khau</h2>
+    <input id="mk" type="password" placeholder="nhap mat khau"  required/>
+    <input type="submit" value="dang ki">
+  </form>
+  <script>
+    function dangki(event){
+      event.preventDefault();
+      var tk = document.getElementById("tk").value;
+      var mk = document.getElementById("mk").value;
+      var name = document.getElementById("name1").value;
+      var name2 = document.getElementById("name1").value;
+      let listName = [];
+      if(localStorage.getItem(tk) !== null){
+        alert("tài khoản đã tồn tại , vui lòng tạo một tài khoản khác !");
+        return;
+      }
+      else{
+        localStorage.setItem(tk,mk);
+        for(let i = 0 ; i < listName.length ; i ++){
+          if(nameUser !==null){
+            listName.push(name);
+          }
+          console.log("User :",listName,tk,mk)
+
+        }
+        alert("Đã đăng kí tài khoản thành công !");
+       
+      }
+    }                                                                
+  </script>
+</body>
+</html>

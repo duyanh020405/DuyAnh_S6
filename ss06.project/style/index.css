@@ -1,0 +1,267 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* CSS cho phần header */
+.header_infor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #4caf50; /* Màu nền của header */
+    color: white; /* Màu chữ của header */
+  }
+  
+  .header_infor div {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header_infor .icon {
+    width: 50px; /* Kích thước của biểu tượng */
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .header_infor h1 {
+    font-size: 2em; /* Kích thước của tiêu đề chính */
+  }
+  
+  .header_infor h3 {
+    font-size: 1.2em; /* Kích thước của tiêu đề phụ */
+  }
+  
+  .header_infor a {
+    text-decoration: none;
+    color: white; /* Màu chữ cho các liên kết */
+    margin-right: 10px;
+  }
+  
+  .header_infor button {
+    background-color: white; /* Màu nền của nút */
+    color: #4caf50; /* Màu chữ của nút */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .header_infor button:hover {
+    background-color: #f1f1f1; /* Màu nền của nút khi di chuột vào */
+  }
+  
+
+.icon {
+    width: 50px;
+    height: auto;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #007bff;
+}
+
+.all_product {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .product_list {
+    flex: 1 1 33.33%; /* Hiển thị 3 cột trên mỗi hàng */
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .change_product {
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .product {
+    max-width: 100%; /* Hình ảnh không vượt quá kích thước của khung chứa */
+    height: auto;
+    display: block;
+    margin: 0 auto 10px; /* Căn giữa hình ảnh */
+  }
+  
+  .change_product h1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .change_product h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .change_product h4 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .change_product button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .change_product button:hover {
+    background-color: #45a049;
+  }
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px; 
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.footer-container {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: flex-start; 
+}
+
+.store-info, .personal-info, .note {
+    flex: 1; 
+    padding: 0 20px; /
+}
+
+.note {
+    border-left: 2px solid #fff; }
+
+.footer-container h2 {
+    font-size: 20px; 
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px; }
+
+.footer-container p {
+    margin: 10px 0; 
+}
+
+.footer-container a {
+    color: #fff; 
+    text-decoration: none;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.icon {
+    width: 50px;
+    height: auto;
+}
+
+.title {
+    font-size: 2rem;
+}
+img {
+    max-width: 80%; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease-in-out; 
+}
+
+img:hover {
+    transform: scale(1.05); 
+}
+img {
+    border: 2px solid #ddd; 
+}
+
+
+img {
+    display: block;
+    margin: 0 auto; 
+}
+.find {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .find h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .search {
+    padding: 10px;
+    width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .search:focus {
+    outline: none;
+    border-color: #4caf50;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }

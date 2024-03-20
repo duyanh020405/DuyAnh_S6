@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dog_store</title>
+  </head>
+  <link rel="stylesheet" href="/ss06.project/style/index.css" />
+  <!--HEADER-->
+  <body>
+    <header class="header_infor" style="border: solid black">
+      <div>
+        <img
+          class="icon"
+          src="/ss06.project/asset/doge-meme-icon-free-vector.jpg"
+          alt=""
+        />
+        <h3>DOG OVER SIZE</h3>
+      </div>
+      <div>
+        <h1 style="font-size: xxx-large">Cửa Hàng Thú Cưng</h1>
+        <h3 style="color: white">Uy tin - Chat luong - Dang yeu</h3>
+      </div>
+
+      <div>
+        <a class="in" style="color: black" href="/ss06.project/pages/login.html"
+          >Đăng nhập</a
+        >
+        <a
+          class="in"
+          style="color: black"
+          href="/ss06.project/pages/register.html"
+          >Đăng kí</a
+        >
+        <a href=""><button>Nhận nuôi :</button></a>
+      </div>
+    </header>
+    <!--INPUT TO FIND-->
+    <div class="find">
+      <h3>Tìm kiếm theo tên :</h3>
+      <input
+        id="find"
+        class="search"
+        type="text"
+        placeholder="nhập tên (id) chú chó  bạn cần tìm"
+      />
+      <button onclick="find()">FIND</button>
+    </div>
+    <script src="/ss06.project/js/find.js"></script>
+    <div id="show" style="border: solid black"></div>
+
+    <!--MAIN-->
+
+    <main>
+      <h1 class="blinking-text">
+        Nuôi chó không chỉ là việc chăm sóc một sinh vật sống mà còn mang lại
+        nhiều lợi ích cho sức khỏe vật chất và tinh thần của con người.
+      </h1>
+      <div class="img_inf">
+        <div>
+          <img
+            class="img_change"
+            id="image"
+            src="/ss06.project/asset/R (1).jpg"
+          />
+          <script src="/ss06.project/js/img_change.js"></script>
+        </div>
+        <div>
+          <h2 style="text-align: center">
+            <a href="">Trang gio hang </a>
+            <br />
+            <a href="/ss06.project/pages/chiTietsp.html">Giới thiệu chi tiết về các con vật !</a>
+            <br />
+            <a href="">San pham</a>
+            <br />
+            <a href=""></a>
+          </h2>
+        </div>
+      </div>
+      <!--Products-->
+      <div class="all_product">
+        <div class="product_list">
+          <div class="change_product">
+            <img
+              class="product"
+              src="/ss06.project/asset/product1.jpg"
+              alt=""
+            />
+            <h1 id="1">Pomeranian</h1>
+            <h3>id : 001</h3>
+            <h4>
+              san pham nay khong phai la <br />thuoc va khong co tac dung <br />
+              thay the thuoc chua benh
+            </h4>
+            <a href="/ss06.project/pages/chiTietsp.html">-tim hieu them</a>
+            <button onclick="buy(1)">Nhận nuôi</button>
+          </div>
+          <div class="change_product">
+            <img
+              class="product"
+              src="/ss06.project/asset/product2.jpg"
+              alt=""
+            />
+            <h1 id="2">Cho PR2</h1>
+            <h3>id : 002</h3>
+            <h4>
+              san pham nay khong phai la <br />thuoc va khong co tac dung <br />
+              thay the thuoc chua benh
+            </h4>
+            <a href="/ss06.project/pages/chiTietsp.html">-tim hieu them</a>
+            <button onclick="buy(2)">Nhận nuôi</button>
+          </div>
+          <div class="change_product">
+            <img
+              class="product"
+              src="/ss06.project/asset/product3.jpg"
+              alt=""
+            />
+            <h1 id="3">Shih Tzu</h1>
+            <h3>id : 003</h3>
+            <h4>
+              san pham nay khong phai la <br />thuoc va khong co tac dung <br />
+              thay the thuoc chua benh
+            </h4>
+            <a href="/ss06.project/pages/chiTietsp.html">-tim hieu them</a>
+            <button onclick="buy(3)">Nhận nuôi</button>
+          </div>
+        </div>
+        <!--past2-->
+        <div class="product_list">
+          <div class="change_product">
+            <img
+              class="product"
+              src="/ss06.project/asset/product4.jpg"
+              alt=""
+            />
+            <h1 id="4">Pug</h1>
+            <h3>id : 004</h3>
+            <h4>
+              san pham nay khong phai la <br />thuoc va khong co tac dung <br />
+              thay the thuoc chua benh
+            </h4>
+            <a href="/ss06.project/pages/chiTietsp.html">-tim hieu them</a>
+            <button onclick="buy(4)">Nhận nuôi</button>
+          </div>
+          <div class="change_product">
+            <img
+              class="product"
+              src="/ss06.project/asset/product5.jpg"
+              alt=""
+            />
+            <h1 id="5">Maltese</h1>
+            <h3>id : 005</h3>
+            <h4>
+              san pham nay khong phai la <br />thuoc va khong co tac dung <br />
+              thay the thuoc chua benh
+              <a href="/ss06.project/pages/chiTietsp.html">-tim hieu them</a>
+            </h4>
+            <button onclick="buy(5)">Nhận nuôi</button>
+          </div>
+          <div class="change_product">
+            <img
+              class="product"
+              src="/ss06.project/asset/product6.jpg"
+              alt=""
+            />
+            <h1 id="6">French Bulldog</h1>
+            <h3>id : 006</h3>
+            <h4>
+              san pham nay khong phai la <br />thuoc va khong co tac dung <br />
+              thay the thuoc chua benh
+            </h4>
+            <a href="/ss06.project/pages/chiTietsp.html">-tim hieu them</a>
+            <button onclick="buy(6)">Nhận nuôi</button>
+          </div>
+        </div>
+        <!--past3-->
+        <div class="product_list">
+          <div class="change_product">
+            <img
+              class="product"
+              src="/ss06.project/asset/product7.jpg"
+              alt=""
+            />
+            <h1 id="7">Papliion</h1>
+            <h3>id : 007</h3>
+            <h4>
+              san pham nay khong phai la <br />thuoc va khong co tac dung <br />
+              thay the thuoc chua benh
+            </h4>
+            <a href="/ss06.project/pages/chiTietsp.html">-tim hieu them</a>
+            <button onclick="buy(7)">Nhận nuôi</button>
+          </div>
+          <div class="change_product">
+            <img
+              class="product"
+              src="/ss06.project/asset/product8.jpg"
+              alt=""
+            />
+            <h1 id="8">Cavalier King Charles Spaniel</h1>
+            <h3>id : 008</h3>
+            <h4>
+              san pham nay khong phai la <br />thuoc va khong co tac dung <br />
+              thay the thuoc chua benh
+            </h4>
+            <a href="/ss06.project/pages/chiTietsp.html">-tim hieu them</a>
+            <button onclick="buy(8)">Nhận nuôi</button>
+          </div>
+          <div class="change_product">
+            <img
+              class="product"
+              src="/ss06.project/asset/product9.jpg"
+              alt=""
+            />
+            <h1 id="9">Japanese Chin</h1>
+            <h3>id : 009</h3>
+            <h4>
+              san pham nay khong phai la <br />thuoc va khong co tac dung <br />
+              thay the thuoc chua benh
+            </h4>
+            <a href="/ss06.project/pages/chiTietsp.html">-tim hieu them</a>
+            <button onclick="buy(9)">Nhận nuôi</button>
+          </div>
+        </div>
+      </div>
+      <!--PHAN LOAI-->
+    </main>
+    <!--FOOTER-->
+    <footer>
+      <div id="gioi-thieu" class="footer-container">
+        <div class="store-info">
+          <h3>Thông tin cửa hàng</h3>
+          <p>Cửa hàng DOG OVER SIZE</p>
+          <p>
+            DOG OVER SIZE là một cửa hàng chuyên cho nhận nuôi những chú chó
+            đáng yêu và bị bỏ rơi không có nơi nương tựa
+          </p>
+          <p>Số điện thoại: 0123 456 789</p>
+          <p>Email: example@example.com</p>
+        </div>
+        <div class="personal-info">
+          <h2>Liên hệ</h2>
+          <p>Địa chỉ: Số 1, Đại Cồ Việt, Hai Bà Trưng, Hà Nội</p>
+          <p>Điện thoại: 024 1234 5678</p>
+        </div>
+        <div class="note">
+          <h2>Hồ sơ thầy</h2>
+          <h3>Thông tin cá nhân</h3>
+          <p>Họ và tên: Chu pa pi</p>
+          <p>Số điện thoại cá nhân: 0931 511 560</p>
+          <p>Email cá nhân: abc@gmail.com</p>
+          <p>
+            Cửa hàng có rất nhiều những chú cún đáng yêu và xinh xắn có thể mang
+            đến cho bạn cảm giác vui vẻ , hạnh phúc với những gì mà những chú
+            cún mang lại cho bạn , giúp bạn vui vẻ , hạnh phúc hơn trong cuộc
+            sống
+          </p>
+        </div>
+      </div>
+      <p>&copy; 2024 Dog over size. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
