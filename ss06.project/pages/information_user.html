@@ -6,41 +6,21 @@
   <title>Document</title>
 </head>
 <body>
-  <div>
-    <h2>Name :</h2>
-  <input type="text" id="name" />
+  <h1>Dang ki thong tin</h1>
+  <h2>First name :</h2>
+  <input id="name1" type="text" placeholder="nhap tai khoan" required />
+  <h2>Last name :</h2>
+  <input id="name2" type="text" placeholder="nhap tai khoan" required />
   <h2>Address</h2>
   <input type="text" id="address" />
   <h2>Sex :</h2>
   <input type="text" id="sex" />
   <h2>Gmail :</h2>
   <input type="text" id="gmail" />
-  <button onclick="showUser()">Nộp</button>
+  <button onclick="luuUser()">Nộp</button>
   <div id="userInfo"></div>
-  </div>
-   <!-- Thêm một phần tử div để hiển thị thông tin người dùng -->
-  <script>
-    function showUser() {
-      var information = [];
-      let name = document.getElementById(`name`).value;
-      let address = document.getElementById(`address`).value;
-      let sex = document.getElementById(`sex`).value;
-      let gmail = document.getElementById(`gmail`).value;
-      information.push(name,address,sex,gmail)
-      localStorage.setItem("information",information)
-
-      // Tạo một chuỗi HTML chứa thông tin người dùng
-      var userInfoHTML = `
-        <h2>Thông tin người dùng:</h2>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Address:</strong> ${address}</p>
-        <p><strong>Sex:</strong> ${sex}</p>
-        <p><strong>Gmail:</strong> ${gmail}</p>
-      `;
-
-      // Hiển thị thông tin người dùng trong phần tử div có id="userInfo"
-      document.getElementById('userInfo').innerHTML = userInfoHTML;
-    }
-  </script>
+  <script src="/ss06.project/js/luuUser.js">
+    
+  </script>  
 </body>
 </html>

@@ -121,14 +121,14 @@ var products = [
 
     let newlist = [];
         function buy(index){
-            if(confirm("ban co chac chan voi viec nuoi no khong ?")){
+            if(confirm("ban co chac chan voi viec nuoi no với giá khong ?")){
             if(localStorage.getItem(products[index].id) !== null){
-                alert(`con vật với id : ${products[index].id} đã được đặt nuôi , vui lòng chọn con vật khác `)
+                alert(`con vật với id : ${products[index].id} đã được đặt nuôi với giá  ${products[index].money} , vui lòng chọn con vật khác `)
         
             }
             else{
                 newlist.push(products[index].name);
-                alert(`con vật với số id ${products[index].id} được đặt nuôi bởi bạn thành công`)
+                alert(`con vật với số id ${products[index].id} được đặt nuôi bởi bạn với giá  ${products[index].money} thành công`)
                 localStorage.setItem(products[index].id,products[index].name)
             }}
             else[
